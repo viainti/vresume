@@ -1,0 +1,817 @@
+{
+  "common": {
+    "title": "VResume",
+    "subtitle": "Crea currículums profesionales con IA",
+    "description": "VResume es tu editor de currículum inteligente. Diseña, optimiza con IA y exporta en minutos. 100% privado, sin registro.",
+    "dashboard": "Panel",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "newResume": "Nuevo currículum",
+    "copy": "Copiar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "deleteSuccess": "Eliminado exitosamente",
+    "deleteModuleConfirm": "¿Estás seguro de eliminar este módulo? Esta acción no se puede deshacer.",
+    "configured": "Configurado",
+    "notConfigured": "No configurado"
+  },
+  "home": {
+    "header": {
+      "title": "VResume",
+      "startButton": "Empezar gratis",
+      "features": "Características",
+      "pricing": "Precios",
+      "about": "Acerca de",
+      "login": "Iniciar sesión",
+      "register": "Registrarse",
+      "dashboard": "Panel"
+    },
+    "hero": {
+      "badge": "100% Gratis · Sin registro",
+      "title": "Tu currículum perfecto,\ncreado con IA",
+      "subtitle": "Diseña currículums profesionales en minutos. La IA优化 tu contenido mientras mantienes el control total de tus datos.",
+      "cta": "Crear mi currículum",
+      "secondary": "Ver ejemplos"
+    },
+    "features": {
+      "title": "Todo lo que necesitas para destacar",
+      "subtitle": "Herramientas profesionales sin complejidad",
+      "ai": {
+        "badge": "IA Integrada",
+        "title": "Optimización inteligente",
+        "description": "La IA analiza y mejora tu contenido automáticamente, sugiriendo cambios que te ayudan a destacar entre otros candidatos.",
+        "item1": "Mejora de texto con IA",
+        "item1_description": "Transforma frases genéricas en impacto profesional",
+        "item2": "Revisión ortográfica",
+        "item2_description": "Detecta errores antes de que los vea el reclutador"
+      },
+      "storage": {
+        "badge": "Privacidad Total",
+        "title": "Tus datos son tuyos",
+        "description": "Almacenamiento 100% local. Nadie tiene acceso a tu información. Sin servidores externos, sin suscripciones.",
+        "item1": "Guardado local",
+        "item1_description": "Tus datos nunca salen de tu dispositivo",
+        "item2": "Exporta cuando quieras",
+        "item2_description": "PDF profesional listo para enviar",
+        "item3": "Sin límite de currículums"
+      },
+      "preview": {
+        "badge": "Diseño Visual",
+        "title": "Previsualiza al instante",
+        "description": "Cada cambio se refleja inmediatamente. Elige entre plantillas diseñadas profesionalmente.",
+        "item1": "Actualización en tiempo real",
+        "item2": "Múltiples plantillas"
+      }
+    },
+    "news": {
+      "label": "Nuevo",
+      "content": " Soporte para más de 100 modelos de IA"
+    },
+    "cta": {
+      "title": "Tu próxima oportunidad te espera",
+      "description": "No dejes que un mal currículum arruine tus posibilidades. Crea uno que impresione.",
+      "button": "Empezar ahora — es gratis"
+    },
+    "footer": {
+      "copyright": "© 2025 VResume. Creado con ❤️"
+    },
+    "changelog": "Historial de cambios",
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "items": [
+        {
+          "question": "¿Realmente es gratis?",
+          "answer": "Sí, completamente gratis. Sin funciones premium ocultas, sin límite de uso. Puedes crear tantos currículums como necesites."
+        },
+        {
+          "question": "¿Mis datos están seguros?",
+          "answer": "Absolutamente. Todo se almacena localmente en tu navegador. No hay servidores externos, no hay nubes, no hay nadie mirando tus datos."
+        },
+        {
+          "question": "¿Necesito crear una cuenta?",
+          "answer": "No. Puedes empezar a usarlo inmediatamente. Tus datos se guardan automáticamente en tu navegador."
+        },
+        {
+          "question": "¿Cómo exporto mi currículum?",
+          "answer": "Un clic en 'Exportar PDF' genera un archivo profesional de alta calidad, listo para enviar a cualquier empresa."
+        },
+        {
+          "question": "¿Qué modelos de IA soporta?",
+          "answer": "Soporta DeepSeek, Doubao, OpenAI, Gemini y OpenRouter (más de 100 modelos). Elige el que prefieras."
+        }
+      ]
+    }
+  },
+  "dashboard": {
+    "sidebar": {
+      "appName": "VResume",
+      "resumes": "Mis currículums",
+      "settings": "Configuración",
+      "templates": "Plantillas",
+      "ai": "Proveedor de IA"
+    },
+    "resumes": {
+      "created": "Creado",
+      "synced": "Carpeta de respaldo",
+      "view": "Ver",
+      "myResume": "Mis currículums",
+      "create": "Crear currículum",
+      "newResume": "Nuevo currículum",
+      "newResumeDescription": "Crea un nuevo currículum para comenzar.",
+      "import": "Importar currículum",
+      "untitled": "Currículum sin título",
+      "importSuccess": "Configuración importada exitosamente",
+      "importError": "Error al importar. Verifica el formato del archivo",
+      "importDialog": {
+        "title": "Importar currículum",
+        "jsonTitle": "Importar JSON",
+        "jsonDescription": "Importar archivo de configuración exportado (.json)",
+        "pdfTitle": "Importar PDF",
+        "pdfDescription": "Usar Gemini para generar estructura del currículum",
+        "importing": "Importando, espera...",
+        "geminiConfigRequired": "Primero configura Gemini API Key y modelo ID en configuración de IA",
+        "pdfSuccess": "PDF importado exitosamente",
+        "pdfError": "Error al importar PDF. Verifica el contenido o configuración de Gemini"
+      },
+      "notice": {
+        "title": "Aviso",
+        "description": "Se recomienda configurar una carpeta de respaldo para evitar pérdida de datos",
+        "goToSettings": "Ir a configuración"
+      },
+      "deleteConfirmTitle": "¿Confirmar eliminar currículum?",
+      "deleteConfirmDescription": "Esta acción no se puede deshacer. Eliminará permanentemente este currículum.",
+      "createDialog": {
+        "title": "Nuevo currículum",
+        "description": "Crear un nuevo currículum desde cero",
+        "tabs": {
+          "fromTemplate": "Desde plantilla",
+          "uploadFile": "Subir archivo"
+        },
+        "namePlaceholder": "Nombre",
+        "switchTemplate": "Cambiar plantilla",
+        "cancel": "Cancelar",
+        "create": "Crear",
+        "blankTitle": "Currículum en blanco",
+        "startFromBlank": "Empezar desde cero",
+        "startFromTemplate": "Empezar desde plantilla",
+        "blankCardDescription": "Crear desde plantilla predeterminada",
+        "blankThumbnailDescription": "Una página en blanco, sin restricciones, crea tu currículum ideal",
+        "createNow": "Crear ahora",
+        "backToGrid": "Volver a plantillas",
+        "blankPreviewDescription": "Elige esta página en blanco y comienza desde cero.",
+        "useThisTemplate": "Usar esta plantilla",
+        "sample": {
+          "company": "Google",
+          "position": "Ingeniero de software senior",
+          "present": "Actual",
+          "workDescription": "Lideré el equipo frontend, mejorando el rendimiento un 40%."
+        }
+      }
+    },
+    "settings": {
+      "title": "Configuración",
+      "syncDirectory": {
+        "title": "Carpeta de sincronización",
+        "description": "Elige una carpeta para sincronizar y respaldar tus currículums.",
+        "currentSyncFolder": "Carpeta actual",
+        "noFolderConfigured": "No hay carpeta configurada",
+        "changeFolder": "Cambiar carpeta",
+        "selectFolder": "Seleccionar carpeta"
+      },
+      "sync": {
+        "title": "Sincronización",
+        "description": "Elige una carpeta para sincronizar y respaldar tus currículums.",
+        "select": "Seleccionar carpeta"
+      },
+      "ai": {
+        "title": "Configuración de IA",
+        "currentModel": "Modelo actual",
+        "selectModel": "Seleccionar modelo",
+        "getApiKey": "Obtener API Key",
+        "doubao": {
+          "title": "Doubao",
+          "description": "Obtener API key de Volcano Engine",
+          "apiKey": "API Key",
+          "modelId": "ID del modelo"
+        },
+        "deepseek": {
+          "title": "DeepSeek",
+          "description": "Obtener API key de DeepSeek",
+          "apiKey": "API Key"
+        },
+        "openai": {
+          "title": "OpenAI",
+          "description": "Obtener API key de OpenAI o plataforma compatible",
+          "apiKey": "API Key",
+          "modelId": "ID del modelo",
+          "apiEndpoint": "Endpoint de API, ej: https://openai.example.org/v1"
+        },
+        "gemini": {
+          "title": "Gemini",
+          "description": "Soporta mejora, revisión gramatical e importación de PDF. Modelo recomendado: gemini-flash-latest",
+          "apiKey": "Gemini API Key",
+          "modelId": "ID del modelo Gemini"
+        },
+        "openrouter": {
+          "title": "OpenRouter",
+          "description": "Accede a más de 100 modelos IA. Modelo recomendado: anthropic/claude-3.5-haiku",
+          "apiKey": "OpenRouter API Key",
+          "modelId": "ID del modelo (ej: anthropic/claude-3.5-haiku)"
+        },
+        "testConnection": "Probar conexión",
+        "notConfigured": "Se requiere API Key",
+        "modelRequired": "Se requiere ID del modelo",
+        "testSuccess": "¡Conexión exitosa!",
+        "testFailed": "Conexión fallida"
+      }
+    },
+    "templates": {
+      "title": "Plantillas",
+      "useTemplate": "Usar esta plantilla",
+      "preview": "Vista previa",
+      "switchTemplate": "Cambiar plantilla",
+      "classic": {
+        "name": "Clásica",
+        "description": "Diseño tradicional y minimalista para la mayoría de solicitudes"
+      },
+      "modern": {
+        "name": "Dos columnas",
+        "description": "Diseño clásico de dos columnas"
+      },
+      "leftRight": {
+        "name": "Título con fondo",
+        "description": "Títulos de sección con fondo colorido"
+      },
+      "timeline": {
+        "name": "Línea de tiempo",
+        "description": "Diseño cronológico para experiencias"
+      },
+      "minimalist": {
+        "name": "Minimalista",
+        "description": "Amplio espacio en blanco, diseño limpio"
+      },
+      "elegant": {
+        "name": "Elegante",
+        "description": "Diseño de título centrado con líneas elegantes"
+      },
+      "creative": {
+        "name": "Creativa",
+        "description": "Diseño visual dinámico para mostrar personalidad"
+      },
+      "editorial": {
+        "name": "Editorial",
+        "description": "Combina fuentes serif y sans-serif para un aspecto lujoso"
+      }
+    }
+  },
+  "pdfExport": {
+    "button": {
+      "export": "Exportar",
+      "exportPdf": "PDF",
+      "exportJson": "Configuración JSON",
+      "exporting": "Exportando...",
+      "exportingJson": "Exportando...",
+      "print": "PDF (respaldo)"
+    },
+    "toast": {
+      "success": "PDF exportado exitosamente",
+      "error": "Error al exportar PDF",
+      "jsonSuccess": "Configuración exportada exitosamente",
+      "jsonError": "Error al exportar configuración"
+    }
+  },
+  "workbench": {
+    "sidePanel": {
+      "layout": {
+        "title": "Diseño",
+        "addCustomSection": "Agregar sección",
+        "addCustomSectionOption": "Agregar sección personalizada",
+        "standardSections": {
+          "skills": "Habilidades",
+          "experience": "Experiencia laboral",
+          "projects": "Proyectos",
+          "education": "Educación",
+          "selfEvaluation": "Evaluación personal",
+          "certificates": "Certificados"
+        }
+      },
+      "theme": {
+        "title": "Color del tema",
+        "custom": "Personalizado"
+      },
+      "typography": {
+        "title": "Tipografía",
+        "font": {
+          "title": "Fuente",
+          "alibaba": "Alibaba PuHuiTi",
+          "misans": "MiSans",
+          "notosanssc": "Noto Sans SC",
+          "sourcehanserifsc": "Source Han Serif SC",
+          "note": "MiSans es gratuita según su licencia."
+        },
+        "lineHeight": {
+          "title": "Altura de línea",
+          "normal": "Normal",
+          "relaxed": "Relajada",
+          "loose": "Espaciada"
+        },
+        "baseFontSize": {
+          "title": "Tamaño base"
+        },
+        "headerSize": {
+          "title": "Tamaño de título de sección"
+        },
+        "subheaderSize": {
+          "title": "Tamaño de subtítulo"
+        }
+      },
+      "spacing": {
+        "title": "Espaciado",
+        "pagePadding": {
+          "title": "Márgenes de página"
+        },
+        "sectionSpacing": {
+          "title": "Espaciado entre secciones"
+        },
+        "paragraphSpacing": {
+          "title": "Espaciado de párrafos"
+        }
+      },
+      "mode": {
+        "title": "Modo",
+        "useIconMode": {
+          "title": "Modo icono"
+        },
+        "centerSubtitle": {
+          "title": "Subtítulo centrado"
+        },
+        "flexibleHeaderLayout": {
+          "title": "Título largo"
+        }
+      }
+    },
+    "basicPanel": {
+      "title": "Información",
+      "basicField": "Campos básicos",
+      "customField": "Campos personalizados",
+      "githubContributions": "Contribuciones GitHub",
+      "layout": "Diseño",
+      "layoutLeft": "Izquierda",
+      "layoutCenter": "Centro",
+      "layoutRight": "Derecha",
+      "avatar": "Avatar",
+      "customFields": {
+        "placeholders": {
+          "label": "Etiqueta",
+          "value": "Valor"
+        },
+        "displayLabel": "Mostrar etiqueta",
+        "addButton": "Agregar campo personalizado"
+      },
+      "basicFields": {
+        "name": "Nombre",
+        "title": "Puesto",
+        "email": "Correo",
+        "phone": "Teléfono",
+        "website": "Sitio web",
+        "location": "Ubicación",
+        "birthDate": "Fecha de nacimiento",
+        "employementStatus": "Estado"
+      },
+      "fieldVisibility": {
+        "show": "Mostrar",
+        "hide": "Ocultar"
+      }
+    },
+    "experiencePanel": {
+      "title": "Experiencia laboral",
+      "addButton": "Agregar experiencia",
+      "defaultProject": {
+        "company": "Tech Corp",
+        "position": "Ingeniero frontend senior",
+        "date": "2020-Actual",
+        "details": "Lideré el desarrollo..."
+      },
+      "placeholders": {
+        "company": "Nombre de empresa",
+        "position": "Puesto",
+        "date": "Período de trabajo",
+        "details": "Responsabilidades y logros"
+      }
+    },
+    "experienceItem": {
+      "labels": {
+        "company": "Empresa",
+        "position": "Puesto",
+        "date": "Período",
+        "details": "Responsabilidades"
+      },
+      "placeholders": {
+        "company": "Nombre de empresa",
+        "position": "Ej: Ingeniero frontend",
+        "date": "Ej: 2020-Actual",
+        "details": "Describe tus responsabilidades y logros"
+      },
+      "buttons": {
+        "edit": "Editar",
+        "save": "Guardar",
+        "cancel": "Cancelar",
+        "delete": "Eliminar"
+      },
+      "visibility": {
+        "show": "Mostrar",
+        "hide": "Ocultar"
+      }
+    },
+    "projectPanel": {
+      "title": "Proyectos",
+      "addButton": "Agregar proyecto",
+      "defaultProject": {
+        "name": "Proyecto personal",
+        "description": "Descripción del proyecto",
+        "role": "Tu rol",
+        "technologies": "Tecnologías",
+        "date": "2023.01 - 2023.06"
+      },
+      "placeholders": {
+        "name": "Nombre del proyecto",
+        "description": "Describe brevemente el proyecto",
+        "role": "Tu rol en el proyecto",
+        "technologies": "Tecnologías usadas",
+        "date": "Período del proyecto",
+        "link": "Enlace del proyecto"
+      }
+    },
+    "projectItem": {
+      "labels": {
+        "name": "Nombre",
+        "role": "Rol",
+        "date": "Fecha",
+        "description": "Descripción",
+        "link": "Enlace",
+        "linkLabel": "Texto del enlace"
+      },
+      "placeholders": {
+        "name": "Nombre del proyecto",
+        "role": "Tu rol",
+        "date": "Período",
+        "description": "Describe el proyecto",
+        "link": "Enlace",
+        "linkLabel": "Texto"
+      },
+      "hints": {
+        "linkLabel": "Si se deja vacío, se mostrará el dominio automáticamente."
+      },
+      "buttons": {
+        "edit": "Editar",
+        "save": "Guardar",
+        "cancel": "Cancelar",
+        "delete": "Eliminar"
+      },
+      "visibility": {
+        "show": "Mostrar",
+        "hide": "Ocultar"
+      }
+    },
+    "educationPanel": {
+      "title": "Educación",
+      "addButton": "Agregar educación",
+      "defaultProject": {
+        "school": "Nombre de universidad",
+        "degree": "Licenciatura",
+        "major": "Carrera",
+        "date": "2020.09 - 2024.06"
+      },
+      "placeholders": {
+        "school": "Nombre de universidad",
+        "degree": "Seleccionar grado",
+        "major": "Nombre de carrera",
+        "date": "Período de estudios"
+      }
+    },
+    "educationItem": {
+      "labels": {
+        "school": "Universidad",
+        "degree": "Grado",
+        "major": "Carrera",
+        "date": "Período",
+        "description": "Descripción",
+        "gpa": "GPA",
+        "startDate": "Fecha inicio",
+        "endDate": "Fecha fin"
+      },
+      "placeholders": {
+        "school": "Nombre de universidad",
+        "degree": "Seleccionar grado",
+        "major": "Nombre de carrera",
+        "date": "Período",
+        "description": "Descripción",
+        "gpa": "GPA"
+      },
+      "buttons": {
+        "edit": "Editar",
+        "save": "Guardar",
+        "cancel": "Cancelar",
+        "delete": "Eliminar"
+      },
+      "visibility": {
+        "show": "Mostrar",
+        "hide": "Ocultar"
+      }
+    },
+    "certificatesPanel": {
+      "title": "Certificados",
+      "addButton": "Agregar imagen o certificado",
+      "tips": "Soporta clic para subir o Ctrl+V para pegar. Arrastra para ajustar ancho.",
+      "width": "Ancho",
+      "delete": "Eliminar",
+      "empty": "Sin imágenes, sube o pega una"
+    }
+  },
+  "field": {
+    "selectDate": "Seleccionar fecha",
+    "enterYear": "Ingresar año",
+    "toPresent": "Actual"
+  },
+  "richEditor": {
+    "bold": "Negrita",
+    "italic": "Cursiva",
+    "underline": "Subrayado",
+    "link": "Enlace",
+    "linkPlaceholder": "Ingresa enlace, ej: https://example.com",
+    "linkApply": "Aplicar",
+    "linkRemove": "Eliminar",
+    "linkInvalid": "Ingresa un enlace válido",
+    "textColor": "Color de texto",
+    "backgroundColor": "Color de fondo",
+    "alignLeft": "Alinear izquierda",
+    "alignCenter": "Centrar",
+    "alignRight": "Alinear derecha",
+    "alignJustify": "Justificar",
+    "bulletList": "Lista con viñetas",
+    "orderedList": "Lista numerada",
+    "undo": "Deshacer",
+    "redo": "Rehacer",
+    "aiPolish": "Mejorar con IA",
+    "paragraph": "Párrafo",
+    "heading1": "Título 1",
+    "heading2": "Título 2",
+    "heading3": "Título 3",
+    "colors": {
+      "black": "Negro",
+      "darkGray": "Gris oscuro",
+      "gray": "Gris",
+      "red": "Rojo",
+      "orange": "Naranja",
+      "orangeYellow": "Naranja amarillento",
+      "yellow": "Amarillo",
+      "yellowGreen": "Amarillo verdoso",
+      "green": "Verde",
+      "cyan": "Cian",
+      "lightBlue": "Azul claro",
+      "blue": "Azul",
+      "purple": "Morado",
+      "magenta": "Magenta",
+      "pink": "Rosa"
+    }
+  },
+  "iconSelector": {
+    "all": "Todos",
+    "searchPlaceholder": "Buscar iconos...",
+    "noMatchingIcons": "No se encontraron iconos",
+    "tryOtherKeywords": "Prueba otras palabras clave",
+    "selectOtherCategory": "Selecciona otra categoría",
+    "categories": {
+      "personal": "Personal",
+      "education": "Educación",
+      "experience": "Experiencia",
+      "skills": "Habilidades",
+      "languages": "Idiomas",
+      "projects": "Proyectos",
+      "achievements": "Logros",
+      "hobbies": "Intereses",
+      "social": "Social",
+      "others": "Otros"
+    },
+    "icons": {
+      "user": "Usuario",
+      "email": "Correo",
+      "phone": "Teléfono",
+      "address": "Dirección",
+      "website": "Sitio web",
+      "mobile": "Móvil",
+      "education": "Educación",
+      "school": "Escuela",
+      "major": "Carrera",
+      "library": "Biblioteca",
+      "scholarship": "Beca",
+      "work": "Trabajo",
+      "company": "Empresa",
+      "office": "Oficina",
+      "dateRange": "Rango de fechas",
+      "workTime": "Horario",
+      "programming": "Programación",
+      "system": "Sistema",
+      "database": "Base de datos",
+      "terminal": "Terminal",
+      "techStack": "Stack tecnológico",
+      "language": "Idioma",
+      "speaking": "Hablar",
+      "communication": "Comunicación",
+      "project": "Proyecto",
+      "branch": "Rama",
+      "release": "Lanzamiento",
+      "target": "Objetivo",
+      "trophy": "Trofeo",
+      "medal": "Medalla",
+      "star": "Estrella",
+      "interest": "Interés",
+      "music": "Música",
+      "art": "Arte",
+      "photography": "Fotografía",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "profile": "Perfil",
+      "review": "Revisar",
+      "filter": "Filtrar",
+      "link": "Enlace",
+      "salary": "Salario",
+      "idea": "Idea",
+      "send": "Enviar",
+      "share": "Compartir",
+      "settings": "Configuración",
+      "search": "Buscar",
+      "flag": "Bandera",
+      "bookmark": "Favorito",
+      "thumbsUp": "Me gusta",
+      "skill": "Habilidad"
+    }
+  },
+  "photoConfig": {
+    "title": "Configuración de avatar",
+    "description": "Personaliza el avatar de tu currículum",
+    "upload": {
+      "title": "Enlace online",
+      "dragHint": "Arrastra o haz clic para subir",
+      "sizeLimit": "La imagen no puede exceder 2MB",
+      "typeLimit": "Sube un archivo de imagen",
+      "urlPlaceholder": "Ingresa enlace de imagen",
+      "invalidUrl": "Enlace inválido o inaccesible",
+      "timeout": "Tiempo de espera agotado",
+      "loadError": "Error al cargar imagen"
+    },
+    "config": {
+      "aspectRatio": "Proporción",
+      "size": "Tamaño",
+      "width": "Ancho",
+      "height": "Alto",
+      "border-radius": "Radio de borde",
+      "widthPlaceholder": "Ancho",
+      "heightPlaceholder": "Alto",
+      "ratios": {
+        "1:1": "1:1 Cuadrado",
+        "4:3": "4:3 Horizontal",
+        "3:4": "3:4 Vertical",
+        "16:9": "16:9 Panorámico",
+        "custom": "Personalizado"
+      },
+      "borderRadius": {
+        "none": "Ninguno",
+        "medium": "Medio",
+        "full": "Circular",
+        "custom": "Personalizado",
+        "customPlaceholder": "Radio personalizado"
+      }
+    },
+    "actions": {
+      "reset": "Restablecer",
+      "close": "Cerrar",
+      "cancel": "Cancelar",
+      "removePhoto": "Eliminar avatar"
+    }
+  },
+  "previewDock": {
+    "switchTemplate": "Cambiar plantilla",
+    "grammarCheck": {
+      "idle": "Revisar gramática con IA",
+      "checking": "Revisando...",
+      "configurePrompt": "Primero configura API Key y modelo",
+      "configureButton": "Configurar",
+      "errorToast": "Error en revisión. Intenta de nuevo"
+    },
+    "sidePanel": {
+      "expand": "Expandir panel",
+      "collapse": "Colapsar panel"
+    },
+    "editPanel": {
+      "expand": "Expandir editor",
+      "collapse": "Colapsar editor"
+    },
+    "previewPanel": {
+      "expand": "Expandir vista previa",
+      "collapse": "Colapsar vista previa"
+    },
+    "github": "GitHub",
+    "backToDashboard": "Volver al panel",
+    "copyResume": {
+      "tooltip": "Copiar currículum",
+      "success": "Currículum copiado",
+      "error": "Error al copiar"
+    },
+    "export": {
+      "tooltip": "Exportar currículum",
+      "pdf": "Exportar PDF",
+      "json": "Exportar JSON",
+      "print": "PDF (respaldo)"
+    },
+    "autoOnePage": {
+      "tooltip": "Auto una página",
+      "enabled": "Modo de una página activado",
+      "disabled": "Modo de una página desactivado",
+      "cannotFit": "Contenido extenso. Considera reducir o ajustar márgenes"
+    },
+    "backup": {
+      "configured": "Respaldo configurado",
+      "notConfigured": "Sin directorio de respaldo",
+      "clickToConfigure": "Clic para configurar"
+    }
+  },
+  "aiPolishDialog": {
+    "title": "Mejorar con IA",
+    "description": {
+      "ready": "Opcionalmente ingresa requisitos y haz clic en 'Comenzar'",
+      "polishing": "Mejorando contenido...",
+      "finished": "Contenido optimizado"
+    },
+    "error": {
+      "configRequired": "Primero configura el modelo IA",
+      "polishFailed": "Error al mejorar",
+      "applied": "Contenido mejorado aplicado"
+    },
+    "content": {
+      "original": "Contenido original",
+      "polished": "Contenido mejorado"
+    },
+    "customInstructions": "Requisitos personalizados",
+    "customInstructionsPlaceholder": "Ej: Usa lenguaje más técnico, destaca logros cuantificables... (opcional)",
+    "button": {
+      "start": "Comenzar",
+      "regenerate": "Regenerar",
+      "generating": "Generando...",
+      "apply": "Aplicar"
+    }
+  },
+  "templates": {
+    "switchTemplate": "Cambiar plantilla"
+  },
+  "themeModal": {
+    "delete": {
+      "title": "¿Confirmar eliminación?",
+      "description": "¿Eliminar {title}?",
+      "confirmText": "Eliminar",
+      "cancelText": "Cancelar"
+    }
+  },
+  "grammarCheck": {
+    "title": "Revisión gramatical con IA",
+    "description": "{count} sugerencias encontradas",
+    "exit": "Salir",
+    "spelling": "Ortografía",
+    "punctuation": "Puntuación",
+    "original": "Original",
+    "error_point": "Error",
+    "suggestion": "Sugerencia",
+    "reason": "Razón",
+    "accept": "Aplicar",
+    "ignore": "Ignorar",
+    "found_issues": "{count} problemas encontrados",
+    "applied_success": "Cambio aplicado",
+    "apply_error": "Texto no encontrado",
+    "no_errors_title": "¡Excelente!",
+    "no_errors_desc": "Sin errores ortográficos ni de puntuación."
+  },
+  "faqDialog": {
+    "title": "Preguntas frecuentes (FAQ)",
+    "description": "Consejos y respuestas sobre VResume.",
+    "items": {
+      "browser-compatibility": {
+        "question": "¿Qué navegador recomienda?",
+        "answer": "Chrome o Edge para mejor compatibilidad con exportación."
+      },
+      "export-methods": {
+        "question": "¿Cuál es la diferencia entre los métodos de exportación?",
+        "answer": "• PDF: Renderizado de alta precisión.\n• Impresión del navegador: Usa la función de imprimir del navegador."
+      },
+      "export-failure": {
+        "question": "¿Qué hacer si la exportación falla?",
+        "answer": "1. Usa Chrome para mejor compatibilidad.\n2. Prueba en modo incógnito.\n3. Usa 'PDF (respaldo)'."
+      },
+      "drag-and-drop": {
+        "question": "¿Cómo reordenar secciones?",
+        "answer": "En el panel de 'Diseño', arrastra el icono de puntos en la izquierda de cada tarjeta."
+      }
+    }
+  }
+}
